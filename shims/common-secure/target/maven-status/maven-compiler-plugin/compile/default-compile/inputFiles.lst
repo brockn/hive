@@ -1,0 +1,12 @@
+/home/brock/workspaces/hive-maven/hive-brock/shims/common-secure/../src/common-secure/java/org/apache/hadoop/hive/thrift/client/TUGIAssumingTransport.java
+/home/brock/workspaces/hive-maven/hive-brock/shims/common-secure/../src/common-secure/java/org/apache/hadoop/security/token/delegation/HiveDelegationTokenSupport.java
+/home/brock/workspaces/hive-maven/hive-brock/shims/common-secure/../src/common-secure/java/org/apache/hadoop/hive/thrift/DelegationTokenSelector.java
+/home/brock/workspaces/hive-maven/hive-brock/shims/common-secure/../src/common-secure/java/org/apache/hadoop/hive/thrift/ZooKeeperTokenStore.java
+/home/brock/workspaces/hive-maven/hive-brock/shims/common-secure/../src/common-secure/java/org/apache/hadoop/hive/thrift/DelegationTokenSecretManager.java
+/home/brock/workspaces/hive-maven/hive-brock/shims/common-secure/../src/common-secure/java/org/apache/hadoop/hive/thrift/TokenStoreDelegationTokenSecretManager.java
+/home/brock/workspaces/hive-maven/hive-brock/shims/common-secure/../src/common-secure/java/org/apache/hadoop/hive/thrift/DelegationTokenStore.java
+/home/brock/workspaces/hive-maven/hive-brock/shims/common-secure/../src/common-secure/java/org/apache/hadoop/hive/thrift/DBTokenStore.java
+/home/brock/workspaces/hive-maven/hive-brock/shims/common-secure/../src/common-secure/java/org/apache/hadoop/hive/shims/HadoopShimsSecure.java
+/home/brock/workspaces/hive-maven/hive-brock/shims/common-secure/../src/common-secure/java/org/apache/hadoop/hive/thrift/HadoopThriftAuthBridge20S.java
+/home/brock/workspaces/hive-maven/hive-brock/shims/common-secure/../src/common-secure/java/org/apache/hadoop/hive/thrift/MemoryTokenStore.java
+/home/brock/workspaces/hive-maven/hive-brock/shims/common-secure/../src/common-secure/java/org/apache/hadoop/hive/thrift/DelegationTokenIdentifier.java

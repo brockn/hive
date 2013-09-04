@@ -1,0 +1,10 @@
+org/apache/hadoop/hive/shims/Hadoop23Shims$2.class
+org/apache/hadoop/hive/shims/Hadoop23Shims$HCatHadoopShims23.class
+org/apache/hadoop/hive/shims/Hadoop23Shims.class
+org/apache/hadoop/hive/shims/Jetty23Shims$Server.class
+org/apache/hadoop/hive/shims/Hadoop23Shims$MiniDFSShim.class
+org/apache/hadoop/mapred/WebHCatJTShim23.class
+org/apache/hadoop/hive/shims/Jetty23Shims$1.class
+org/apache/hadoop/hive/shims/Jetty23Shims.class
+org/apache/hadoop/hive/shims/Hadoop23Shims$MiniMrShim.class
+org/apache/hadoop/hive/shims/Hadoop23Shims$1.class

@@ -40,10 +40,10 @@
     <module>serde</module>
     <module>metastore</module>
     <module>ql</module>
+    <module>service</module>
     <!--
     <module>exec</module>
     <module>contrib</module>
-    <module>service</module>
     <module>cli</module>
     <module>jdbc</module>
     <module>beeline</module>
@@ -64,7 +64,9 @@
     <antlr.version>3.4</antlr.version>
     <asm.version>3.1</asm.version>
     <avro.version>1.7.1</avro.version>
-    <datanucleus.version>2.0.3</datanucleus.version>
+    <datanucleus-api-jdo.version>3.2.1</datanucleus-api-jdo.version>
+    <datanucleus-core.version>3.2.2</datanucleus-core.version>
+    <datanucleus-rdbms.version>3.2.1</datanucleus-rdbms.version>
     <checkstyle.version>5.0</checkstyle.version>
     <findbugs.version>1.3.9</findbugs.version>
     <commons-cli.version>1.2</commons-cli.version>
@@ -118,6 +120,11 @@
             <source>1.6</source>
             <target>1.6</target>
           </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>build-helper-maven-plugin</artifactId>
+          <version>1.8</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>

@@ -31,7 +31,7 @@
       <groupId>org.apache.hive</groupId>
       <artifactId>hive-shims</artifactId>
       <version>${project.version}</version>
-      <type>uberjar</type>
+      <classifier>uberjar</classifier>
     </dependency>
     <dependency>
       <groupId>org.apache.hadoop</groupId>

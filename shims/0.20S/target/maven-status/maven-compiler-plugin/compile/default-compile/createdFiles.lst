@@ -1,0 +1,10 @@
+org/apache/hadoop/hive/shims/Hadoop20SShims$2.class
+org/apache/hadoop/hive/shims/Hadoop20SShims$MiniDFSShim.class
+org/apache/hadoop/mapred/WebHCatJTShim20S.class
+org/apache/hadoop/hive/shims/Hadoop20SShims$1.class
+org/apache/hadoop/hive/shims/Jetty20SShims.class
+org/apache/hadoop/hive/shims/Hadoop20SShims$MiniMrShim.class
+org/apache/hadoop/hive/shims/Hadoop20SShims.class
+org/apache/hadoop/hive/shims/Jetty20SShims$Server.class
+org/apache/hadoop/hive/shims/Hadoop20SShims$HCatHadoopShims20S.class
+org/apache/hadoop/hive/shims/Jetty20SShims$1.class
