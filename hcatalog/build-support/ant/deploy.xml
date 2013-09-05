@@ -46,7 +46,7 @@
       <sequential>
         <echo message="Installing local artifact for maven : @{module}" />
         <artifact:install file="${path.to.basedir}/../build/@{module}/hive-@{jarname}-${hive.version}.jar">
-          <artifact:pom file="${path.to.basedir}/../build/@{module}/pom-old.xml"/>
+          <artifact:pom file="${path.to.basedir}/../build/@{module}/pom.xml"/>
           <artifact:localRepository path="${mvn.local.repo}"/>
         </artifact:install>
       </sequential>
