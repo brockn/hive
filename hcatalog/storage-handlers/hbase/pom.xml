@@ -93,11 +93,5 @@
       <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>com.yammer.metrics</groupId>
-      <artifactId>metrics-core</artifactId>
-      <version>${metrics-core.version}</version>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
 </project>

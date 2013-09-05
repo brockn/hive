@@ -40,9 +40,7 @@
     <module>hwi</module>
     <module>testutils</module>
     <module>hbase-handler</module>
-    <!--
     <module>hcatalog</module>
-    -->
     <module>tests</module>
   </modules>
 
