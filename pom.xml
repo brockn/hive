@@ -51,6 +51,7 @@
     <!--
     <module>hcatalog</module>
 -->
+    <module>tests</module>
   </modules>
 
   <properties>
@@ -83,8 +84,8 @@
     <guava.version>11.0.2</guava.version>
     <hadoop-20.version>0.20.2</hadoop-20.version>
     <hadoop-20s.version>1.1.2</hadoop-20s.version>
-    <hadoop-23.version>2.0.3-alpha</hadoop-23.version>
-    <hbase.version>0.92.0</hbase.version>
+    <hadoop-23.version>2.0.5-alpha</hadoop-23.version>
+    <hbase.version>0.94.6.1</hbase.version>
     <jackson.version>1.8.8</jackson.version>
     <javaewah.version>0.3.2</javaewah.version>
     <javolution.version>5.5.1</javolution.version>
@@ -98,6 +99,7 @@
     <libthrift.version>0.9.0</libthrift.version>
     <log4j.version>1.2.16</log4j.version>
     <mockito-all.version>1.8.2</mockito-all.version>
+    <mina.version>2.0.0-M5</mina.version>
     <protobuf.version>2.4.1</protobuf.version>
     <rat.version>0.8</rat.version>
     <slf4j.version>1.6.1</slf4j.version>
@@ -131,11 +133,6 @@
           <version>2.1</version>
         </plugin>
         <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>build-helper-maven-plugin</artifactId>
-          <version>1.8</version>
-        </plugin>
-        <plugin>
           <groupId>org.antlr</groupId>
           <artifactId>antlr3-maven-plugin</artifactId>
           <version>${antlr.version}</version>
@@ -144,6 +141,11 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-war-plugin</artifactId>
           <version>2.4</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>2.2</version>
         </plugin>
       </plugins>
     </pluginManagement>
