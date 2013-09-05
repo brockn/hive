@@ -30,11 +30,11 @@
   <name>Hive Shims Common</name>
 
   <dependencies>
+    <!-- inter-project -->
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
-      <artifactId>hadoop-core</artifactId>
-      <version>${hadoop-20.version}</version>
-      <optional>true</optional>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>${commons-logging.version}</version>
     </dependency>
     <dependency>
       <groupId>log4j</groupId>
@@ -42,19 +42,20 @@
       <version>${log4j.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.thrift</groupId>
-      <artifactId>libthrift</artifactId>
-      <version>${libthrift.version}</version>
-    </dependency>
-    <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>${guava.version}</version>
     </dependency>
     <dependency>
-      <groupId>commons-logging</groupId>
-      <artifactId>commons-logging</artifactId>
-      <version>${commons-logging.version}</version>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-core</artifactId>
+      <version>${hadoop-20.version}</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.thrift</groupId>
+      <artifactId>libthrift</artifactId>
+      <version>${libthrift.version}</version>
     </dependency>
   </dependencies>
   <build>

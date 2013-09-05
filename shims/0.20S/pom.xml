@@ -30,11 +30,13 @@
   <name>Hive Shims 0.20S</name>
 
   <dependencies>
+    <!-- intra-project -->
     <dependency>
       <groupId>org.apache.hive.shims</groupId>
       <artifactId>common-secure</artifactId>
       <version>${project.version}</version>
     </dependency>
+    <!-- inter-project -->
     <dependency>
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-core</artifactId>

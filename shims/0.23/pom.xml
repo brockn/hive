@@ -29,11 +29,13 @@
   <name>Hive Shims 0.23</name>
 
   <dependencies>
+    <!-- intra-project -->
     <dependency>
       <groupId>org.apache.hive.shims</groupId>
       <artifactId>common-secure</artifactId>
       <version>${project.version}</version>
     </dependency>
+    <!-- inter-project -->
     <dependency>
       <groupId>commons-lang</groupId>
       <artifactId>commons-lang</artifactId>
