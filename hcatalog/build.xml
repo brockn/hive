@@ -268,8 +268,8 @@
 
     <target name="mvn-deploy" depends="mvn-init"
             description="Deploy artifacts to a Maven repository.">
-        <artifact:deploy file="pom.xml">
-            <artifact:pom file="pom.xml"/>
+        <artifact:deploy file="pom-old.xml">
+            <artifact:pom file="pom-old.xml"/>
             <remoteRepository id="${mvn.deploy.repo.id}" url="${mvn.deploy.repo.url}"/>
         </artifact:deploy>
         <ant target="mvn-deploy" dir="core" inheritAll="false" useNativeBasedir="true"/>
@@ -287,10 +287,10 @@
             <handler classname="org.apache.tools.ant.input.SecureInputHandler"/>
         </input>
 
-        <_sign inputFile="pom.xml"/>
-        <artifact:deploy file="pom.xml">
-            <artifact:pom file="pom.xml"/>
-            <attach file="pom.xml.asc" type="pom.asc"/>
+        <_sign inputFile="pom-old.xml"/>
+        <artifact:deploy file="pom-old.xml">
+            <artifact:pom file="pom-old.xml"/>
+            <attach file="pom-old.xml.asc" type="pom.asc"/>
             <remoteRepository id="${mvn.deploy.repo.id}" url="${mvn.deploy.repo.url}"/>
         </artifact:deploy>
 
