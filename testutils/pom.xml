@@ -28,6 +28,7 @@
   <name>Hive TestUtils</name>
 
   <dependencies>
+    <!-- inter-project -->
     <dependency>
       <groupId>com.google.code.tempus-fugit</groupId>
       <artifactId>tempus-fugit</artifactId>
