@@ -28,6 +28,7 @@
   <name>Hive Contrib</name>
 
   <dependencies>
+    <!-- intra-project -->
     <dependency>
       <groupId>org.apache.hive</groupId>
       <artifactId>hive-ql</artifactId>
@@ -44,11 +45,11 @@
       <version>${project.version}</version>
       <classifier>uberjar</classifier>
     </dependency>
+    <!-- inter-project -->
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
-      <artifactId>hadoop-core</artifactId>
-      <version>${hadoop-20.version}</version>
-      <optional>true</optional>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>${commons-codec.version}</version>
     </dependency>
     <dependency>
       <groupId>commons-logging</groupId>
@@ -56,10 +57,12 @@
       <version>${commons-logging.version}</version>
     </dependency>
     <dependency>
-      <groupId>commons-codec</groupId>
-      <artifactId>commons-codec</artifactId>
-      <version>${commons-codec.version}</version>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-core</artifactId>
+      <version>${hadoop-20.version}</version>
+      <optional>true</optional>
     </dependency>
+    <!-- test inter-project -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
