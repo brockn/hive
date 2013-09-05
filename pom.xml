@@ -41,15 +41,14 @@
     <module>metastore</module>
     <module>ql</module>
     <module>service</module>
-    <!--
-    <module>exec</module>
     <module>contrib</module>
     <module>cli</module>
     <module>jdbc</module>
     <module>beeline</module>
     <module>hwi</module>
-    <module>hbase-handler</module>
     <module>testutils</module>
+    <module>hbase-handler</module>
+    <!--
     <module>hcatalog</module>
 -->
   </modules>
@@ -140,6 +139,11 @@
           <groupId>org.antlr</groupId>
           <artifactId>antlr3-maven-plugin</artifactId>
           <version>${antlr.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>2.4</version>
         </plugin>
       </plugins>
     </pluginManagement>

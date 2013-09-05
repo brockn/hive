@@ -23,14 +23,34 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <artifactId>hive-serde</artifactId>
+  <artifactId>hive-jdbc</artifactId>
   <packaging>jar</packaging>
-  <name>Hive Serde</name>
+  <name>Hive JDBC</name>
 
   <dependencies>
     <dependency>
       <groupId>org.apache.hive</groupId>
+      <artifactId>hive-ql</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hive</groupId>
       <artifactId>hive-common</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hive</groupId>
+      <artifactId>hive-metastore</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hive</groupId>
+      <artifactId>hive-service</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hive</groupId>
+      <artifactId>hive-serde</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
@@ -40,26 +60,9 @@
       <optional>true</optional>
     </dependency>
     <dependency>
-      <groupId>org.apache.avro</groupId>
-      <artifactId>avro</artifactId>
-      <version>${avro.version}</version>
-    </dependency>
-    <dependency>
       <groupId>commons-logging</groupId>
       <artifactId>commons-logging</artifactId>
       <version>${commons-logging.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>${junit.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.mockito</groupId>
-      <artifactId>mockito-all</artifactId>
-      <version>${mockito-all.version}</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.thrift</groupId>
@@ -67,45 +70,16 @@
       <version>${libthrift.version}</version>
     </dependency>
     <dependency>
-      <groupId>commons-codec</groupId>
-      <artifactId>commons-codec</artifactId>
-      <version>${commons-codec.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
-      <artifactId>hadoop-test</artifactId>
-      <version>${hadoop-20.version}</version>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
       <scope>test</scope>
-      <optional>true</optional>
     </dependency>
   </dependencies>
 
   <build>
     <sourceDirectory>${basedir}/src/java</sourceDirectory>
-    <!-- depdends on metastore
     <testSourceDirectory>${basedir}/src/test</testSourceDirectory>
-    -->
-    <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>build-helper-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>add-source</id>
-            <phase>generate-sources</phase>
-            <goals>
-              <goal>add-source</goal>
-            </goals>
-            <configuration>
-              <sources>
-                <source>src/gen/protobuf/gen-java</source>
-                <source>src/gen/thrift/gen-javabean</source>
-              </sources>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
   </build>
 
 </project>
