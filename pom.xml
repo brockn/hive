@@ -106,6 +106,39 @@
     <zookeeper.version>3.4.3</zookeeper.version>
   </properties>
 
+  <repositories>
+    <repository>
+      <id>datanucleus</id>
+      <name>datanucleus maven repository</name>
+      <url>http://www.datanucleus.org/downloads/maven2</url>
+      <layout>default</layout>
+      <releases>
+        <enabled>true</enabled>
+        <checksumPolicy>warn</checksumPolicy>
+      </releases>
+    </repository>
+    <repository>
+      <id>glassfish-repository</id>
+      <url>http://maven.glassfish.org/content/groups/glassfish</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>glassfish-repo-archive</id>
+      <url>http://maven.glassfish.org/content/groups/glassfish</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
   <build>
     <pluginManagement>
       <plugins>
