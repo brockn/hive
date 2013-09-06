@@ -185,6 +185,18 @@
           <artifactId>build-helper-maven-plugin</artifactId>
           <version>1.8</version>
         </plugin>
+        <plugin>
+          <groupId>org.datanucleus</groupId>
+          <artifactId>datanucleus-maven-plugin</artifactId>
+          <version>3.3.0-release</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.datanucleus</groupId>
+              <artifactId>datanucleus-core</artifactId>
+              <version>${datanucleus-core.version}</version>
+            </dependency>
+          </dependencies>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>

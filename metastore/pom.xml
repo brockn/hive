@@ -72,7 +72,6 @@
       <groupId>org.datanucleus</groupId>
       <artifactId>datanucleus-api-jdo</artifactId>
       <version>${datanucleus-api-jdo.version}</version>
-      <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>org.datanucleus</groupId>
@@ -158,26 +157,15 @@
   <build>
     <sourceDirectory>${basedir}/src/java</sourceDirectory>
     <testSourceDirectory>${basedir}/src/test</testSourceDirectory>
+    <resources>
+      <resource>
+        <directory>${basedir}/src/model</directory>
+        <includes>
+          <include>package.jdo</include>
+        </includes>
+      </resource>
+    </resources>
     <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>build-helper-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>add-source</id>
-            <phase>generate-sources</phase>
-            <goals>
-              <goal>add-source</goal>
-            </goals>
-            <configuration>
-              <sources>
-                <source>src/model</source>
-                <source>src/gen/thrift/gen-javabean</source>
-              </sources>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
       <plugin>
         <groupId>org.antlr</groupId>
         <artifactId>antlr3-maven-plugin</artifactId>
@@ -199,6 +187,42 @@
           <execution>
             <goals>
               <goal>test-jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>add-source</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>add-source</goal>
+            </goals>
+            <configuration>
+              <sources>
+                <source>src/model</source>
+                <source>src/gen/thrift/gen-javabean</source>
+              </sources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.datanucleus</groupId>
+        <artifactId>datanucleus-maven-plugin</artifactId>
+        <configuration>
+          <api>JDO</api>
+          <verbose>true</verbose>
+          <metadataIncludes>**/*.jdo</metadataIncludes>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>process-classes</phase>
+            <goals>
+              <goal>enhance</goal>
             </goals>
           </execution>
         </executions>
