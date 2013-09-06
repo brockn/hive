@@ -1,29 +1,29 @@
 # rollback file, generated with:
-# egrep '^mv' maven-rollfoward.sh | while read ignore source target; do newtarget=$(dirname $source); newsource=$target$(basename $source); echo install -Dv $newsource $newtarget/;done
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/serde2/TestSerdeWithFieldComments.java serde/src/test/org/apache/hadoop/hive/serde2/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/serde2/dynamic_type/TestDynamicSerDe.java serde/src/test/org/apache/hadoop/hive/serde2/dynamic_type/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestMetaStoreEventListenerOnlyOnCommit.java metastore/src/test/org/apache/hadoop/hive/metastore/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestMetaStoreEndFunctionListener.java metastore/src/test/org/apache/hadoop/hive/metastore/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestHiveMetaStore.java metastore/src/test/org/apache/hadoop/hive/metastore/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestHiveMetaStoreWithEnvironmentContext.java metastore/src/test/org/apache/hadoop/hive/metastore/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestMetaStoreConnectionUrlHook.java metastore/src/test/org/apache/hadoop/hive/metastore/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestPartitionNameWhitelistValidation.java metastore/src/test/org/apache/hadoop/hive/metastore/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestMetaStoreInitListener.java metastore/src/test/org/apache/hadoop/hive/metastore/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestMarkPartition.java metastore/src/test/org/apache/hadoop/hive/metastore/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestMarkPartitionRemote.java metastore/src/test/org/apache/hadoop/hive/metastore/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestMetaStoreEventListener.java metastore/src/test/org/apache/hadoop/hive/metastore/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestRemoteHiveMetaStore.java metastore/src/test/org/apache/hadoop/hive/metastore/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestEmbeddedHiveMetaStore.java metastore/src/test/org/apache/hadoop/hive/metastore/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestSetUGIOnBothClientServer.java metastore/src/test/org/apache/hadoop/hive/metastore/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestSetUGIOnOnlyServer.java metastore/src/test/org/apache/hadoop/hive/metastore/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestSetUGIOnOnlyClient.java metastore/src/test/org/apache/hadoop/hive/metastore/
-install -Dv it-tests/src/test/java/org/apache/hadoop/ql/security/TestDefaultHiveMetastoreAuthorizationProvider.java ql/src/test/org/apache/hadoop/hive/ql/security/
-install -Dv it-tests/src/test/java/org/apache/hadoop/ql/security/TestAuthorizationPreEventListener.java ql/src/test/org/apache/hadoop/hive/ql/security/
-install -Dv it-tests/src/test/java/org/apache/hadoop/ql/history/TestHiveHistory.java ql/src/test/org/apache/hadoop/hive/ql/history/
-install -Dv it-tests/src/test/java/org/apache/hadoop/ql/QTestUtil.java ql/src/test/org/apache/hadoop/hive/ql/
-install -Dv it-tests/src/test/java/org/apache/hive/service/server/TestHiveServer2Concurrency.java service/src/test/org/apache/hive/service/server/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/ql/hooks/EnforceReadOnlyTables.java ql/src/test/org/apache/hadoop/hive/ql/hooks/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/ql/TestMTQueries.java ql/src/test/org/apache/hadoop/hive/ql/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/ql/TestLocationQueries.java ql/src/test/org/apache/hadoop/hive/ql/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/hbase/HBaseQTestUtil.java hbase-handler/src/test/org/apache/hadoop/hive/hbase/
-install -Dv it-tests/src/test/java/org/apache/hadoop/hive/hbase/HBaseTestSetup.java hbase-handler/src/test/org/apache/hadoop/hive/hbase/
+# egrep '^mv' maven-rollfoward.sh | while read ignore source target; do newsource=$target$(basename $source); echo install -Dvm 644 $newsource $source;done
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/serde2/TestSerdeWithFieldComments.java serde/src/test/org/apache/hadoop/hive/serde2/TestSerdeWithFieldComments.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/serde2/dynamic_type/TestDynamicSerDe.java serde/src/test/org/apache/hadoop/hive/serde2/dynamic_type/TestDynamicSerDe.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestMetaStoreEventListenerOnlyOnCommit.java metastore/src/test/org/apache/hadoop/hive/metastore/TestMetaStoreEventListenerOnlyOnCommit.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestMetaStoreEndFunctionListener.java metastore/src/test/org/apache/hadoop/hive/metastore/TestMetaStoreEndFunctionListener.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestHiveMetaStore.java metastore/src/test/org/apache/hadoop/hive/metastore/TestHiveMetaStore.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestHiveMetaStoreWithEnvironmentContext.java metastore/src/test/org/apache/hadoop/hive/metastore/TestHiveMetaStoreWithEnvironmentContext.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestMetaStoreConnectionUrlHook.java metastore/src/test/org/apache/hadoop/hive/metastore/TestMetaStoreConnectionUrlHook.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestPartitionNameWhitelistValidation.java metastore/src/test/org/apache/hadoop/hive/metastore/TestPartitionNameWhitelistValidation.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestMetaStoreInitListener.java metastore/src/test/org/apache/hadoop/hive/metastore/TestMetaStoreInitListener.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestMarkPartition.java metastore/src/test/org/apache/hadoop/hive/metastore/TestMarkPartition.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestMarkPartitionRemote.java metastore/src/test/org/apache/hadoop/hive/metastore/TestMarkPartitionRemote.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestMetaStoreEventListener.java metastore/src/test/org/apache/hadoop/hive/metastore/TestMetaStoreEventListener.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestRemoteHiveMetaStore.java metastore/src/test/org/apache/hadoop/hive/metastore/TestRemoteHiveMetaStore.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestEmbeddedHiveMetaStore.java metastore/src/test/org/apache/hadoop/hive/metastore/TestEmbeddedHiveMetaStore.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestSetUGIOnBothClientServer.java metastore/src/test/org/apache/hadoop/hive/metastore/TestSetUGIOnBothClientServer.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestSetUGIOnOnlyServer.java metastore/src/test/org/apache/hadoop/hive/metastore/TestSetUGIOnOnlyServer.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/metastore/TestSetUGIOnOnlyClient.java metastore/src/test/org/apache/hadoop/hive/metastore/TestSetUGIOnOnlyClient.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/ql/security/TestDefaultHiveMetastoreAuthorizationProvider.java ql/src/test/org/apache/hadoop/hive/ql/security/TestDefaultHiveMetastoreAuthorizationProvider.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/ql/security/TestAuthorizationPreEventListener.java ql/src/test/org/apache/hadoop/hive/ql/security/TestAuthorizationPreEventListener.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/ql/history/TestHiveHistory.java ql/src/test/org/apache/hadoop/hive/ql/history/TestHiveHistory.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/ql/QTestUtil.java ql/src/test/org/apache/hadoop/hive/ql/QTestUtil.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hive/service/server/TestHiveServer2Concurrency.java service/src/test/org/apache/hive/service/server/TestHiveServer2Concurrency.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/ql/hooks/EnforceReadOnlyTables.java ql/src/test/org/apache/hadoop/hive/ql/hooks/EnforceReadOnlyTables.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/ql/TestMTQueries.java ql/src/test/org/apache/hadoop/hive/ql/TestMTQueries.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/ql/TestLocationQueries.java ql/src/test/org/apache/hadoop/hive/ql/TestLocationQueries.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/hbase/HBaseQTestUtil.java hbase-handler/src/test/org/apache/hadoop/hive/hbase/HBaseQTestUtil.java
+install -Dvm 644 it-tests/src/test/java/org/apache/hadoop/hive/hbase/HBaseTestSetup.java hbase-handler/src/test/org/apache/hadoop/hive/hbase/HBaseTestSetup.java
