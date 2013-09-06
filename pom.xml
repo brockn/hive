@@ -42,7 +42,6 @@
     <module>serde</module>
     <module>service</module>
     <module>shims</module>
-    <module>tests</module>
     <module>testutils</module>
   </modules>
 
