@@ -30,7 +30,6 @@ mkdir -p it-tests/src/test/java/org/apache/hadoop/ql/
 mv ql/src/test/org/apache/hadoop/hive/ql/QTestUtil.java it-tests/src/test/java/org/apache/hadoop/ql/
 mkdir -p it-tests/src/test/java/org/apache/hive/service/server/
 mv service/src/test/org/apache/hive/service/server/TestHiveServer2Concurrency.java it-tests/src/test/java/org/apache/hive/service/server/
-mv ql/src/test/org/apache/hadoop/hive/ql/hooks/EnforceReadOnlyTables.java it-tests/src/test/java/org/apache/hadoop/hive/ql/hooks/
 mkdir -p it-tests/src/test/java/org/apache/hadoop/hive/ql/hooks/
 mv ql/src/test/org/apache/hadoop/hive/ql/hooks/EnforceReadOnlyTables.java it-tests/src/test/java/org/apache/hadoop/hive/ql/hooks/
 mv ql/src/test/org/apache/hadoop/hive/ql/TestMTQueries.java it-tests/src/test/java/org/apache/hadoop/hive/ql/

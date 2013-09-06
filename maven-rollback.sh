@@ -23,7 +23,6 @@ mv it-tests/src/test/java/org/apache/hadoop/ql/history/TestHiveHistory.java ql/s
 mv it-tests/src/test/java/org/apache/hadoop/ql/QTestUtil.java ql/src/test/org/apache/hadoop/hive/ql
 mv it-tests/src/test/java/org/apache/hive/service/server/TestHiveServer2Concurrency.java service/src/test/org/apache/hive/service/server
 mv it-tests/src/test/java/org/apache/hadoop/hive/ql/hooks/EnforceReadOnlyTables.java ql/src/test/org/apache/hadoop/hive/ql/hooks
-mv it-tests/src/test/java/org/apache/hadoop/hive/ql/hooks/EnforceReadOnlyTables.java ql/src/test/org/apache/hadoop/hive/ql/hooks
 mv it-tests/src/test/java/org/apache/hadoop/hive/ql/TestMTQueries.java ql/src/test/org/apache/hadoop/hive/ql
 mv it-tests/src/test/java/org/apache/hadoop/hive/ql/TestLocationQueries.java ql/src/test/org/apache/hadoop/hive/ql
 mv it-tests/src/test/java/org/apache/hadoop/hive/hbase/HBaseQTestUtil.java hbase-handler/src/test/org/apache/hadoop/hive/hbase
