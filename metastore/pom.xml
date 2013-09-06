@@ -62,6 +62,12 @@
       <artifactId>commons-logging</artifactId>
       <version>${commons-logging.version}</version>
     </dependency>
+    <!-- XXX we probably shouldn't be shipping this but the tests depend on it -->
+    <dependency>
+      <groupId>org.apache.derby</groupId>
+      <artifactId>derby</artifactId>
+      <version>${derby.version}</version>
+    </dependency>
     <dependency>
       <groupId>org.datanucleus</groupId>
       <artifactId>datanucleus-api-jdo</artifactId>
